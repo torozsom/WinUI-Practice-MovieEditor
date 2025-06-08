@@ -36,7 +36,7 @@
                 Content="Reset"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Center"
-                Click="{x:Bind ViewModel.ResetMovie}" />
+                Command="{x:Bind ViewModel.ResetMovieCommand}" />
 
         <CheckBox Grid.Row="1"
                   Grid.Column="0"

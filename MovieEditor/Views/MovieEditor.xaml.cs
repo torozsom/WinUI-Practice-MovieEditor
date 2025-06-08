@@ -7,8 +7,6 @@ public sealed partial class MovieEditor : Page
 {
     public MovieEditorViewModel ViewModel { get; } = new();
 
-    public MovieEditor()
-    {
-        InitializeComponent();
-    }
+    public MovieEditor() { InitializeComponent(); }
+
 }
