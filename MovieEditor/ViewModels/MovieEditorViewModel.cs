@@ -4,14 +4,13 @@ using MovieEditor.Models;
 
 namespace MovieEditor.ViewModels;
 
-public partial class MovieEditorViewModel : ObservableObject
+[ObservableObject]
+public partial class MovieEditorViewModel
 {
     [ObservableProperty]
     private Movie _currentMovie = new("Movie", true);
 
     [RelayCommand]
-    private void ResetMovie()
-    {
-        CurrentMovie = new Movie(CurrentMovie.Description, false);
-    }
+    private void ResetMovie() => CurrentMovie.Seen = false;
+
 }

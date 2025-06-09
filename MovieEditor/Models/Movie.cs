@@ -2,7 +2,8 @@ using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace MovieEditor.Models;
 
-public partial class Movie : ObservableObject
+[ObservableObject]
+public partial class Movie
 {
     [ObservableProperty]
     private string _description;
